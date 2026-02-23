@@ -2787,7 +2787,7 @@ class Modmail(commands.Cog):
         closing_message = (
             "🎨 Hoodratdev\n"
             "Payments accepted via PayPal.\n"
-            "https://www.paypal.com/paypalme/hoodratproductions\n"
+            "https://www.paypal.com/paypalme/customizeit25\n"
             "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
