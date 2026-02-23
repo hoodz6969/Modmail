@@ -2804,10 +2804,11 @@ class Modmail(commands.Cog):
     @checks.thread_only()
     async def benji(self, ctx):
         closing_message = (
-            "🔥 Benji's’s Chain's"
-            "Payments accepted via PayPal.\n\n"
-            "https://www.paypal.com/paypalme/benjidesigns"
-            "THE COLLECTIVE • Secure & Trusted\n\n"
+            "🔥 Benji's’s Chain's\n"
+            "Payments accepted via PayPal.\n"
+            "https://www.paypal.com/paypalme/benjidesigns\n"
+            "\n"
+            "THE COLLECTIVE • Secure & Trusted"
         )
 
         ctx.message.content = closing_message
