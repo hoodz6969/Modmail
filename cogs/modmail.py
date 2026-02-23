@@ -2785,9 +2785,9 @@ class Modmail(commands.Cog):
     @checks.thread_only()
     async def hoodrat(self, ctx):
         closing_message = (
-            "🎨 Hoodratdev/n"
+            "🎨 Hoodratdev./n"
             "Payments accepted via PayPal.\n"
-            "https://www.paypal.com/paypalme/hoodratproductions/n"
+            "https://www.paypal.com/paypalme/hoodratproductions./n"
             "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
