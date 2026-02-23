@@ -2799,5 +2799,23 @@ class Modmail(commands.Cog):
         sent_emoji, _ = await self.bot.retrieve_emoji()
         await self.bot.add_reaction(ctx.message, sent_emoji)
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.SUPPORTER)
+    @checks.thread_only()
+    async def benji(self, ctx):
+        closing_message = (
+            "🔥 Benji's’s Chain's"
+            "Payments accepted via PayPal.\n\n"
+            "https://www.paypal.com/paypalme/benjidesigns"
+            "THE COLLECTIVE • Secure & Trusted\n\n"
+        )
+
+        ctx.message.content = closing_message
+        async with ctx.typing():
+            await ctx.thread.reply(ctx.message)
+
+        sent_emoji, _ = await self.bot.retrieve_emoji()
+        await self.bot.add_reaction(ctx.message, sent_emoji)
+
 async def setup(bot):
     await bot.add_cog(Modmail(bot))
