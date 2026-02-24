@@ -2875,5 +2875,33 @@ class Modmail(commands.Cog):
         sent_emoji, _ = await self.bot.retrieve_emoji()
         await self.bot.add_reaction(ctx.message, sent_emoji)
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.SUPPORTER)
+    @checks.thread_only()
+    async def chain(self, ctx):
+        closing_message = (
+            "gettingstarted,\n"
+            "\n"
+            "Choose a designer to make your chain.\n"
+            "\n"
+            "1. Pick a chain model from https://discord.com/channels/1165698510272856094/1458290635487445096\n"
+            "Single Chain £20\n"
+            "Double Chain £25\n"
+            "Triple Chain £30\n"
+            "Extra Pendant £5 Each\n"
+            "Iced out vvs £10 Extra\n"
+            "\n"
+            "2. What do you want the pendant to say?\n"
+            "\n"
+            "Pick a font from - https://www.dafont.com/\n"
+        )
+
+        ctx.message.content = closing_message
+        async with ctx.typing():
+            await ctx.thread.reply(ctx.message)
+
+        sent_emoji, _ = await self.bot.retrieve_emoji()
+        await self.bot.add_reaction(ctx.message, sent_emoji)
+
 async def setup(bot):
     await bot.add_cog(Modmail(bot))
