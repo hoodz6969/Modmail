@@ -2894,6 +2894,8 @@ class Modmail(commands.Cog):
             "2. What do you want the pendant to say?\n"
             "\n"
             "3. Pick a font from - https://www.dafont.com/\n"
+            "\n"
+            "4. Choose a colour scheme.\n"
         )
 
         ctx.message.content = closing_message
