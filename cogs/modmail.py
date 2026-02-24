@@ -2893,7 +2893,7 @@ class Modmail(commands.Cog):
             "\n"
             "2. What do you want the pendant to say?\n"
             "\n"
-            "Pick a font from - https://www.dafont.com/\n"
+            "3. Pick a font from - https://www.dafont.com/\n"
         )
 
         ctx.message.content = closing_message
