@@ -2880,7 +2880,7 @@ class Modmail(commands.Cog):
     @checks.thread_only()
     async def chain(self, ctx):
         closing_message = (
-            "gettingstarted,\n"
+            "Getting Started,\n"
             "\n"
             "Choose a designer to make your chain.\n"
             "\n"
