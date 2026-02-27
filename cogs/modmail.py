@@ -2789,6 +2789,8 @@ class Modmail(commands.Cog):
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/customizeit25\n"
             "\n"
+            "Please ensure to use the family and friends option\n"
+            "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
 
@@ -2807,6 +2809,8 @@ class Modmail(commands.Cog):
             "🔥 Benji's’s Chain's\n"
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/benjidesigns\n"
+            "\n"
+            "Please ensure to use the family and friends option\n"
             "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
@@ -2827,6 +2831,8 @@ class Modmail(commands.Cog):
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/ReytBoosts\n"
             "\n"
+            "Please ensure to use the family and friends option\n"
+            "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
 
@@ -2845,6 +2851,8 @@ class Modmail(commands.Cog):
             "🔥 Liggy's’s designs's\n"
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/FazzaFMG\n"
+            "\n"
+            "Please ensure to use the family and friends option\n"
             "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
@@ -2865,6 +2873,8 @@ class Modmail(commands.Cog):
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/BaileyBotten\n"
             "\n"
+            "Please ensure to use the family and friends option\n"
+            "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
 
@@ -2883,6 +2893,8 @@ class Modmail(commands.Cog):
             "🔥 JC Design's\n"
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/crazyblu565\n"
+            "\n"
+            "Please ensure to use the family and friends option\n"
             "\n"
             "THE COLLECTIVE • Secure & Trusted"
         )
