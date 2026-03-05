@@ -2964,6 +2964,7 @@ class Modmail(commands.Cog):
             "Getting Started,\n"
             "\n"
             "Choose a designer to make your gun.\n"
+            "Available Designers <@587650157630193669> <@1296955108755509271>\n"
             "\n"
             "1. Pick a gun model from https://discord.com/channels/1165698510272856094/1473078405413998634\n"
             "Pistol £25\n"
