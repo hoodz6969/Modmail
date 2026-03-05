@@ -2945,6 +2945,8 @@ class Modmail(commands.Cog):
             "Our designer is currently awaiting your response.\n"
             "\n"
             "Your order cannot progress until we receive the required reply from you. Please respond in this ticket so work can continue.\n"
+            "\n"
+            "If we recieve no response within 24 hours then your ticket will be closed\n"
         )
 
         ctx.message.content = closing_message
