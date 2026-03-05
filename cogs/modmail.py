@@ -2956,5 +2956,32 @@ class Modmail(commands.Cog):
         sent_emoji, _ = await self.bot.retrieve_emoji()
         await self.bot.add_reaction(ctx.message, sent_emoji)
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.SUPPORTER)
+    @checks.thread_only()
+    async def gun(self, ctx):
+        closing_message = (
+            "Getting Started,\n"
+            "\n"
+            "Choose a designer to make your gun.\n"
+            "\n"
+            "1. Pick a gun model from https://discord.com/channels/1165698510272856094/1473078405413998634\n"
+            "Pistol £25\n"
+            "SMG £30\n"
+            "AR £35\n"
+            "Extras (Barb wire, Laser attachment ect...) £7.50 each\n"
+            "\n"
+            "Custom modelling needed? Price varies and will be determined as per the project.\n"
+            "\n"
+            "2. Choose a design for your gun.\n"
+        )
+
+        ctx.message.content = closing_message
+        async with ctx.typing():
+            await ctx.thread.reply(ctx.message)
+
+        sent_emoji, _ = await self.bot.retrieve_emoji()
+        await self.bot.add_reaction(ctx.message, sent_emoji)
+
 async def setup(bot):
     await bot.add_cog(Modmail(bot))
