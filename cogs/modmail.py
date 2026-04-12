@@ -2783,7 +2783,7 @@ class Modmail(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.SUPPORTER)
     @checks.thread_only()
-    async def hoodrat(self, ctx):
+    async def payment(self, ctx):
         closing_message = (
             "The Collective\n"
             "Payments accepted via Tebex only\n"
