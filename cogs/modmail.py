@@ -2888,6 +2888,27 @@ class Modmail(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.SUPPORTER)
     @checks.thread_only()
+    async def envy(self, ctx):
+        closing_message = (
+            "🕶️ Envy's Design's\n"
+            "Payments accepted via PayPal.\n"
+            "PAYPALME LINK\n"
+            "\n"
+            "Please ensure to use the family and friends option\n"
+            "\n"
+            "THE COLLECTIVE • Secure & Trusted"
+        )
+
+        ctx.message.content = closing_message
+        async with ctx.typing():
+            await ctx.thread.reply(ctx.message)
+
+        sent_emoji, _ = await self.bot.retrieve_emoji()
+        await self.bot.add_reaction(ctx.message, sent_emoji)
+
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.SUPPORTER)
+    @checks.thread_only()
     async def chain(self, ctx):
         closing_message = (
             "Getting Started,\n"
