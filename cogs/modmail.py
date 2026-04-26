@@ -2892,7 +2892,7 @@ class Modmail(commands.Cog):
         closing_message = (
             "🕶️ Envy's Design's\n"
             "Payments accepted via PayPal.\n"
-            "PAYPALME LINK\n"
+            "https://www.paypal.me/envycustomz\n"
             "\n"
             "Please ensure to use the family and friends option\n"
             "\n"
