@@ -2927,6 +2927,27 @@ class Modmail(commands.Cog):
         sent_emoji, _ = await self.bot.retrieve_emoji()
         await self.bot.add_reaction(ctx.message, sent_emoji)
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.SUPPORTER)
+    @checks.thread_only()
+    async def altair(self, ctx):
+        closing_message = (
+            "🔥 Altair Customs\n"
+            "Payments accepted via PayPal.\n"
+            "https://www.paypal.com/paypalme/AdmHwks\n"
+            "\n"
+            "Please ensure to use the family and friends option\n"
+            "\n"
+            "THE COLLECTIVE • Secure & Trusted"
+        )
+
+        ctx.message.content = closing_message
+        async with ctx.typing():
+            await ctx.thread.reply(ctx.message)
+
+        sent_emoji, _ = await self.bot.retrieve_emoji()
+        await self.bot.add_reaction(ctx.message, sent_emoji)
+
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.SUPPORTER)
