@@ -2804,116 +2804,11 @@ class Modmail(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.SUPPORTER)
     @checks.thread_only()
-    async def benji(self, ctx):
-        closing_message = (
-            "🔥 Benji's Design's\n"
-            "Payments accepted via PayPal.\n"
-            "https://www.paypal.com/paypalme/benjidesigns\n"
-            "\n"
-            "Please ensure to use the family and friends option\n"
-            "\n"
-            "THE COLLECTIVE • Secure & Trusted"
-        )
-
-        ctx.message.content = closing_message
-        async with ctx.typing():
-            await ctx.thread.reply(ctx.message)
-
-        sent_emoji, _ = await self.bot.retrieve_emoji()
-        await self.bot.add_reaction(ctx.message, sent_emoji)
-
-    @commands.command()
-    @checks.has_permissions(PermissionLevel.SUPPORTER)
-    @checks.thread_only()
     async def baz(self, ctx):
         closing_message = (
             "♟️ BlenderBaz\n"
             "Payments accepted via PayPal.\n"
             "https://www.paypal.com/paypalme/ReytBoosts\n"
-            "\n"
-            "Please ensure to use the family and friends option\n"
-            "\n"
-            "THE COLLECTIVE • Secure & Trusted"
-        )
-
-        ctx.message.content = closing_message
-        async with ctx.typing():
-            await ctx.thread.reply(ctx.message)
-
-        sent_emoji, _ = await self.bot.retrieve_emoji()
-        await self.bot.add_reaction(ctx.message, sent_emoji)
-
-    @commands.command()
-    @checks.has_permissions(PermissionLevel.SUPPORTER)
-    @checks.thread_only()
-    async def scoopy(self, ctx):
-        closing_message = (
-            "🔥 Scoopy’s Chains\n"
-            "Payments accepted via PayPal.\n"
-            "https://www.paypal.com/paypalme/BaileyBotten\n"
-            "\n"
-            "Please ensure to use the family and friends option\n"
-            "\n"
-            "THE COLLECTIVE • Secure & Trusted"
-        )
-
-        ctx.message.content = closing_message
-        async with ctx.typing():
-            await ctx.thread.reply(ctx.message)
-
-        sent_emoji, _ = await self.bot.retrieve_emoji()
-        await self.bot.add_reaction(ctx.message, sent_emoji)
-
-    @commands.command()
-    @checks.has_permissions(PermissionLevel.SUPPORTER)
-    @checks.thread_only()
-    async def fin(self, ctx):
-        closing_message = (
-            "⭕⭕___⭕⭕ Fin Customs\n"
-            "Payments accepted via PayPal.\n"
-            "https://www.paypal.me/Findale03\n"
-            "\n"
-            "Please ensure to use the family and friends option\n"
-            "\n"
-            "THE COLLECTIVE • Secure & Trusted"
-        )
-
-        ctx.message.content = closing_message
-        async with ctx.typing():
-            await ctx.thread.reply(ctx.message)
-
-        sent_emoji, _ = await self.bot.retrieve_emoji()
-        await self.bot.add_reaction(ctx.message, sent_emoji)
-
-    @commands.command()
-    @checks.has_permissions(PermissionLevel.SUPPORTER)
-    @checks.thread_only()
-    async def envy(self, ctx):
-        closing_message = (
-            "🕶️ Envy's Design's\n"
-            "Payments accepted via PayPal.\n"
-            "https://paypal.me/goodgirleden\n"
-            "\n"
-            "Please ensure to use the family and friends option\n"
-            "\n"
-            "THE COLLECTIVE • Secure & Trusted"
-        )
-
-        ctx.message.content = closing_message
-        async with ctx.typing():
-            await ctx.thread.reply(ctx.message)
-
-        sent_emoji, _ = await self.bot.retrieve_emoji()
-        await self.bot.add_reaction(ctx.message, sent_emoji)
-
-    @commands.command()
-    @checks.has_permissions(PermissionLevel.SUPPORTER)
-    @checks.thread_only()
-    async def joseph(self, ctx):
-        closing_message = (
-            "🔥 JC Design's\n"
-            "Payments accepted via PayPal.\n"
-            "https://www.paypal.me/crazyblu565\n"
             "\n"
             "Please ensure to use the family and friends option\n"
             "\n"
@@ -2979,7 +2874,7 @@ class Modmail(commands.Cog):
             "\n"
             "Choose a designer to make your chain.\n"
             "\n"
-            "1. Pick a chain model from https://discord.com/channels/1165698510272856094/1458290635487445096\n"
+            "1. Pick a chain model from https://collective-models.altairsystems.tech\n"
             "Single Chain £20\n"
             "Double Chain £25\n"
             "Triple Chain £30\n"
