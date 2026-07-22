@@ -2925,7 +2925,7 @@ class Modmail(commands.Cog):
             "Choose a designer to make your gun.\n"
             "Available Designers <@1296955108755509271>\n"
             "\n"
-            "1. Pick a gun model from https://discord.com/channels/1165698510272856094/1487568930573914178\n"
+            "1. Pick a gun model from https://collective-models.altairsystems.tech\n"
             "Pistol £25\n"
             "SMG £30\n"
             "AR £35\n"
